@@ -15,9 +15,6 @@ body
    line-height: 1.1875;
    margin: 0;
    padding: 0;
-   display: flex;
-   justify-content: center; /* horizontally center */
-   align-items: center; /* vertically center */
 }
 a
 {
@@ -39,22 +36,18 @@ a:hover
 }
 #MediaPlayer1
 {
-   /* left: 0; remove these properties */
-   /* top: 0; */
-   /* width: 100%; */
-   /* height: 100%; */
-   /* margin: 0; */
-}
-#video-container {
-   width: 764px; /* adjust as needed */
-   height: 480px; /* adjust as needed */
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
 }
 </style>
 </head>
 <body>
-<div id="video-container">
-   <video src="projects.mp4" id="MediaPlayer1" autoplay="autoplay" controls="controls" loop="loop" preload="auto">
-   </video>
+<div id="wb_MediaPlayer1" style="position:relative;left:115px;top:26px;width:764px;height:480px;z-index:0;">
+<video src="projects.mp4" id="MediaPlayer1" autoplay="autoplay" controls="controls" loop="loop" preload="auto">
+</video>
 </div>
 </body>
 </html>
