@@ -5,49 +5,45 @@
 <title>Untitled Page</title>
 <meta name="generator" content="Quick 'n Easy Web Builder - http://www.quickandeasywebbuilder.com">
 <style>
-body
-{
-   background-color: #FFFFFF;
-   color: #000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   line-height: 1.1875;
-   margin: 0;
-   padding: 0;
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.1875;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Centering content horizontally */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100vh; /* Setting full height of the viewport */
 }
-a
-{
-   color: #0000FF;
-   text-decoration: underline;
+a {
+    color: #0000FF;
+    text-decoration: underline;
 }
-a:visited
-{
-   color: #800080;
+a:visited {
+    color: #800080;
 }
-a:active
-{
-   color: #FF0000;
+a:active {
+    color: #FF0000;
 }
-a:hover
-{
-   color: #0000FF;
-   text-decoration: underline;
+a:hover {
+    color: #0000FF;
+    text-decoration: underline;
 }
-#MediaPlayer1
-{
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   margin: 0;
+#MediaPlayer1 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 </style>
 </head>
 <body>
-<div id="wb_MediaPlayer1" style="position:absolute;left:115px;top:26px;width:764px;height:480px;z-index:0;">
-<video src="projects.mp4" id="MediaPlayer1" autoplay="autoplay" controls="controls" loop="loop" preload="auto">
-</video>
+<div id="wb_MediaPlayer1">
+    <video src="projects.mp4" id="MediaPlayer1" autoplay="autoplay" controls="controls" loop="loop" preload="auto"></video>
 </div>
 </body>
 </html>
+
