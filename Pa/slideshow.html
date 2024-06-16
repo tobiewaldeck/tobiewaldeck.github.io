@@ -1,0 +1,93 @@
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=" rel="stylesheet" type="text/css"><STYLE TYPE="text/css">
+
+/* Background mechanism */
+body {
+background: 
+linear-gradient( 45deg,
+transparent 69px, rgba(180, 165, 135, 0.5) 69px,
+rgba(180, 165, 135, 0.5) 72px, transparent 72px
+),
+linear-gradient( 135deg,
+transparent 69px, rgba(180, 165, 135, 0.5) 69px,
+rgba(180, 165, 135, 0.5) 72px, transparent 72px
+),
+radial-gradient( 
+transparent 55px, rgba(180, 165, 135, 1.0) 55px,
+rgba(180, 165, 135, 1.0) 60px, transparent 60px,
+transparent 65px, rgba(180, 165, 135, 1.0) 65px,
+rgba(180, 165, 135, 1.0) 70px, transparent 80px
+) -50px -50px;
+background-size: 100px 100px;
+background-color: #E3D3C3;
+font-family:  Verdana, Arial, Helvetica; font-size: 12pt;  color: #707070; 
+}
+
+div.word_wrap{
+	word-break: break-all;
+}
+.image {
+	max-width: 70%;
+	margin: 0px 50px 50px 0px;
+	box-shadow: 25px 25px 25px #444444;
+	background-color: rgba(221,221,221,.5);
+}
+.slide {
+	max-width: 85%;
+	margin: auto;
+}
+.slidev {
+	max-width: 45%;
+	margin: auto;
+}
+<!--  
+TD{font-family:  Verdana, Arial, Helvetica; font-size: 10pt; color: #707070}
+H1{font-family:  Verdana, Arial, Helvetica; font-size: 28; color: #707070}
+H2{font-family:  Verdana, Arial, Helvetica; font-size: 20; color: #707070}
+H3{font-family:  Verdana, Arial, Helvetica; font-size: 12pt; color: #707070}
+H6{font-family:  Verdana, Arial, Helvetica; font-size: 10pt; color: #A0A0A0}
+p{margin-top: -30px; font-size: 32pt; color: Black; font-family: }
+p#p1{margin-top: 0px; font-family:  Verdana, Arial, Helvetica; font-size: 8pt; color: #909090}
+p#p2{font-family:  Verdana, Arial, Helvetica; font-size: 10pt; color: #909090}
+--->
+</STYLE>
+<link rel='stylesheet' href='graphics/slideshow.css' type='text/css' media='all'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="graphics/sss.min.js"></script>
+<script>
+jQuery(function($) {
+$('.slider').sss({ speed: 2000, transition: 800, arrows: false});
+$('.section').click(function(e) {
+e.preventDefault();
+var loc = $(this).attr('href').substring(1);
+var lock = $('#' + loc).offset().top;
+$('body,html').animate({scrollTop:lock});
+});
+});
+</script>
+</head>
+
+<title>       - Slideshow</title><center>
+<h1>       - Slideshow</h1>
+
+<a href="index.html">Back to main webpage</a>
+<br><br>
+<div class='slider'>
+<div class='slide'>1 / 10<div class='image'><image src="medium/A NIKON D300064.JPG" ></div><br></div>
+<div class='slide'>2 / 10<div class='image'><image src="medium/Brits 2008-09-02 (9).JPG" ></div><br></div>
+<div class='slide'>3 / 10<div class='image'><image src="medium/DSC_0025.jpeg" ></div><br></div>
+<div class='slidev'>4 / 10<div class='image'><image src="medium/FILE5028.JPG" ></div><br></div>
+<div class='slidev'>5 / 10<div class='image'><image src="medium/Image0168.jpg" ></div><br></div>
+<div class='slidev'>6 / 10<div class='image'><image src="medium/IMG_20150526_115651.jpg" ></div><br></div>
+<div class='slide'>7 / 10<div class='image'><image src="medium/IMG_20150624_104556.jpg" ></div><br></div>
+<div class='slide'>8 / 10<div class='image'><image src="medium/IMG_20150812_111812.jpg" ></div><br></div>
+<div class='slide'>9 / 10<div class='image'><image src="medium/Oupa en Ouma Waldeck.JPG" ></div><br></div>
+<div class='slide'>10 / 10<div class='image'><image src="medium/SM-G925F62.JPG" ></div><br></div>
+</div>
+</div>
+
+
+<br><hr>
+
+<p id="p1" align=right>Created on 2024/06/15 11:12:56 AM<br>with <a id="websitelink" href="https://www.PhotoPageGen.com" target="_blank" style="text-decoration: none"><font color="#909090">PhotoPageGen</font></a> 8.1</p>
