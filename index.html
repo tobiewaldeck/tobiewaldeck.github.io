@@ -1,18 +1,171 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
+<meta name="generator" content="Ashampoo Photo Commander 16.3.3">
+<meta name="Keywords" content="Ashampoo Photo Commander 16">
 <meta charset="utf-8">
-<title>CSV Split-IT</title>
+<title>Happy Easter Weekend</title>
+<style>body {
+			margin: 0;
+			font-family: 'Open Sans';
+			font-weight:400;
+			text-align: center;
+			background-color: #000000; /* Hintergrundfarbe für die Seite, vom User wählbar */
+			background-image:url('images/sunny_background.jpg');
+			background-size:cover;
+			background-position:center top;
+			background-attachment:fixed;
+			color: #5695a8; /* Schriftfarbe, vom User wählbar */
+			padding-bottom:60px;
+		}
+		h2 {
+			font-size: 55px;
+			line-height: 1.3em;
+			margin: 50px 0 20px 0;
+			font-weight:300;
+		}
+		h3 {
+			font-size: 23px;
+			margin: 0 0 40px 0;
+			color:#757575;
+			font-weight:300;
+		}
+
+		#images {
+			max-width: 1312px; /* 4 spalten mit je 328px */
+			margin: 0 auto;
+			padding: 0;
+			line-height: 0;
+		}
+			#images li {
+				list-style: none;
+				display: inline-block;
+				
+				width: 320px; /* Breite der Bilderrahmen */
+				margin: 4px; /* Außenabstand der Bilderrahmen */
+
+				background-color:#cbdae1; /* Hintergrundfarbe für die Bilderrahmen, vom User wählbar */
+				transition: all 0.3s;
+				border-radius:10px;
+				padding:5px;
+			}
+				#images li:hover {
+					background-color:#d7e3e8; /* Hintergrundfarbe für die Bilderrahmen beim Mouseover */
+					cursor:pointer;
+				}
+
+				#images li div {
+					display: table;
+					margin: 0;
+					height: 240px;	/* Höhe der Bilderrahmen (ohne Bild-Text) */
+					width: 100%;
+				}
+					#images li div a {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				#images li div.imageinfo {
+					font-weight:400;
+					display: block;
+					height:auto;
+					padding-bottom:15px;
+					padding-top:15px;
+					color:#5695a8;
+				}
+					#images li div.imageinfo p {
+						line-height:1.3em;
+						margin:0;
+					}
+
+		#paging {
+			margin: 50px auto 50px auto;
+		}
+			#paging a {
+				display: inline-block;
+				font-size:1.5em;
+				margin: 0 auto;
+				width: 2em;
+				color: #ffffff;
+				text-decoration: none;
+				line-height: 2em;
+				border-radius: 50%;
+				transition: all 0.3s;
+				background-color:#81a6b6;
+			}
+				#paging a:hover {
+					background-color:#f5d2c0;
+					color:#757575;
+				}
+				#paging a.current {
+					background-color:#f5d2c0;
+					color:#757575;
+					box-shadow:0px 0px 10px #81a6b6;
+				}
+
+		#copyright {
+			position:fixed;
+			bottom:0;
+			display: block;
+			width:100%;
+			background-color:#ffffff;
+			font-size:14px;
+			font-weight:400;
+			padding: 14px 0 14px 0;
+			color: #2988cb;
+			text-decoration:none;
+		}
+			#copyright a {
+				display: inline-block;
+			}
+
+	</style>
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
-<style>
-#MediaPlayer1 {
-    width: 100%;
-    max-height: 570px; /* Adjust this value as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-</style>
-<video src="https://tobiewaldeck.github.io/projects.mp4" id="MediaPlayer1" autoplay controls loop preload="auto" controlsList="nodownload">
-</video>
+
+<h2>Happy Easter Weekend</h2>
+
+
+<ul id="images">
+<li>
+<div>
+<a href="images/Blessing.htm">
+<img src="images/Blessing_preview.png">
+</a>
+</div>
+<li>
+<div>
+<a href="images/Bunny.htm">
+<img src="images/Bunny_preview.png">
+</a>
+</div>
+<li>
+<div>
+<a href="images/Chick.htm">
+<img src="images/Chick_preview.png">
+</a>
+</div>
+<li>
+<div>
+<a href="images/He Lives.htm">
+<img src="images/He Lives_preview.png">
+</a>
+</div>
+<li>
+<div>
+<a href="images/Puppy Wall Background (48).htm">
+<img src="images/Puppy Wall Background (48)_preview.png">
+</a>
+</div>
+</ul>
+
+<div id="paging">
+<a class="current">1</a>
+</div>
+
+<a href="http://www.photocommander.com" id="copyright">Created using Ashampoo Photo Commander</a>
 </body>
 </html>
